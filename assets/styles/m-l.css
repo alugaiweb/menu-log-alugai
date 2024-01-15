@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-log {
+    width: 320px;
+    height: 54px;
+    border-radius: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: transparent;
+    transition: all 0.8s;
+}
+
+.btn-log {
+    width: 173px;
+    height: 54px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 60px;
+    background-color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.btn-log h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 7px;
+}
+
+.btn-log .img-log {
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn-log .img-log:hover {
+    background-color: rgba(161, 160, 160, 0.412);
+    transition: 0.3s;
+}
+
+.btn-log .img-log img {
+    width: 30px;
+}
+
+.menu-log-open {
+    background-color: #FFFFFF;
+    width: 320px;
+    height: 300px;
+    border-radius: 0px 0px 32px 32px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.8s;
+}
+
+.list-menu {
+    list-style: none;
+    width: 100%;
+    padding: 25px;
+    margin-top: 15px;
+}
+
+.list-menu .menu-log-item {
+    margin-bottom: 50px;
+}
+
+.list-menu .menu-log-item .menu-log-link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+}
+
+.list-menu .menu-log-item .menu-log-link:hover {
+    color: #074067;
+    transition: 0.3s;
+}
+
+.list-menu .menu-log-item .menu-log-link span {
+    margin-right: 7px;
+}
+
+.width-btn-log .btn-log {
+    width: 100%;
+    border-radius: 32px 32px 0px 0px;
+    gap: 180px;
+    align-items: last baseline;
+}
+
+.border-menu-log .menu-log {
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 32px 32px 0px 0px;
+}
+
+.open-menu-log .menu-log-open {
+    opacity: 1;
+    pointer-events: all;
+    left: 1;
+}
